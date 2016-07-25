@@ -1,0 +1,27 @@
+<h1>Flask Example Users</h1>
+<body>
+    <table border=1>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Email</th>
+      </tr>
+      {% for user in users %}
+      <tr>
+        <td>
+          {{user.first_name}}
+        </td>
+        <td>
+          {{user.last_name}}
+        </td>
+        <td>
+          {{user.age}}
+        </td>
+        <td>
+          {{user.email}}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+</body>
